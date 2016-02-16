@@ -101,7 +101,7 @@ function newGame() {
 
                                 if (survivalOutcome < 4) {
 
-                                    $('planetChoice').append('You had 30% chance of survival with Rover Parks, and humanity made it through hard work and good luck! Congratulations!');
+                                    $('#planetChoice').append('You had 30% chance of survival with Rover Parks, and humanity made it through hard work and good luck! Congratulations!');
 
                                 } else {
 
@@ -119,6 +119,12 @@ function newGame() {
                             $('#planetChoice').append('Please enter a valid choice or check your spelling.');
 
                         }
+
+                        break;
+
+                    case "JUPITER":
+
+                        $('#planetChoice').append('<p>Dude. Seriously? This planet is entirely made of gas. Humanity is dead.</p>');
 
                         break;
 
